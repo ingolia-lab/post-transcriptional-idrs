@@ -1,5 +1,5 @@
 library(ggplot2)
-setwd("~/yeast-idr-analysis-main/suppFigs/suppFig_6/indiv_LA_predictions/")
+setwd("~/post-transcriptional-idrs/suppFigs/suppFig_6/indiv_LA_predictions/")
 
 sgn = read.csv("sgn1_151_200_pred.csv")
 mrn = read.csv("mrn1_61_110.csv")

@@ -5,7 +5,7 @@ library(patchwork)
 library(ggpubr)
 library(minpack.lm)
 
-setwd("~/yeast-idr-analysis-main/fig5_ms1/")
+setwd("~/post-transcriptional-idrs/fig5_ms1/")
 
 
 gc = read.csv("tis11_ironGrowth.csv")
@@ -70,13 +70,13 @@ if(!file.exists('ferrozine_gc.pdf')){
 }
 
 
-if(!file.exists('~/yeast-idr-analysis-main/suppFigs/suppFig_5/tis11_gc_sc.pdf')){
-  setwd("~/yeast-idr-analysis-main/suppFigs/suppFig_5/")
+if(!file.exists('~/post-transcriptional-idrs/suppFigs/suppFig_5/tis11_gc_sc.pdf')){
+  setwd("~/post-transcriptional-idrs/suppFigs/suppFig_5/")
   ggsave('tis11_gc_sc.pdf',sc_plot, height = 4, width=6.5, units='cm')
 }
 
-if(!file.exists('~/yeast-idr-analysis-main/suppFigs/suppFig_5/tis11_gc_addBack.pdf')){
-  setwd("~/yeast-idr-analysis-main/suppFigs/suppFig_5/")
+if(!file.exists('~/post-transcriptional-idrs/suppFigs/suppFig_5/tis11_gc_addBack.pdf')){
+  setwd("~/post-transcriptional-idrs/suppFigs/suppFig_5/")
   ggsave('tis11_gc_addBack.pdf',iron_add, height = 4, width=6.5, units='cm')
 }
 

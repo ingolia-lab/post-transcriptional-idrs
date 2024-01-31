@@ -1,4 +1,4 @@
-setwd('~/yeast-idr-analysis-main/fig1_ms1/iJL039_sorts/')
+setwd('~/post-transcriptional-idrs/fig1_ms1/iJL039_sorts/')
 
 library(flowCore)
 library(ggplot2)
@@ -44,7 +44,7 @@ ssc_plot = ggplot(yfp_sort, aes(FSC.A,SSC.A, color = good_ssc)) +
         legend.position = "none",
         panel.border = element_blank())
 
-setwd('~/yeast-idr-analysis-main/suppFigs/suppFig_1/')
+setwd('~/post-transcriptional-idrs/suppFigs/suppFig_1/')
 ggsave(filename = 'fsc_plot.pdf',plot = fsc_plot,height = 8, width = 8)
 ggsave(filename = 'ssc_plot.pdf',plot = ssc_plot,height = 8, width = 8)
 

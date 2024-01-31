@@ -1,11 +1,11 @@
 library(ggplot2)
 library(readxl)
 
-setwd("~/yeast-idr-analysis-main/processed_scores/")
+setwd("~/post-transcriptional-idrs/processed_scores/")
 dms_scores = read.csv('dms_scores.csv')
 wt_scores = read.csv("wt_scores_sortSeq.csv")
 #get repressor and inactive_control frag list
-setwd("~/yeast-idr-analysis-main/screening_lib_seqs/")
+setwd("~/post-transcriptional-idrs/screening_lib_seqs/")
 active_frags = read_xlsx('dms_library_seqs.xlsx', sheet = 'active_DMS')
 inact_frags = read_xlsx('dms_library_seqs.xlsx', sheet = 'inactive_DMS')
 
@@ -30,7 +30,7 @@ rank_order_plot = ggplot(dms_act, aes(x=rank,y=avg_activity))+
         legend.position = "none",
         panel.border = element_blank())
 
-setwd('~/yeast-idr-analysis-main/fig4_ms1/rank_order_mutational/')
+setwd('~/post-transcriptional-idrs/fig4_ms1/rank_order_mutational/')
 if(!file.exists('rankOrder_dms.pdf')){
   ggsave(filename = 'rankOrder_dms.pdf',plot = rank_order_plot, height=4.5, width = 6,units='cm')
 }

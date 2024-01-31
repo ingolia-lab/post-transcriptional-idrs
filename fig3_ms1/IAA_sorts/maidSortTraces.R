@@ -1,13 +1,13 @@
-setwd("~/yeast-idr-analysis-main/")
+setwd("~/post-transcriptional-idrs/")
 load(file = 'gateFlow.R')
 library(ggplot2)
 library(gridExtra)
 
-setwd("~/yeast-idr-analysis-main/fig1_ms1/iJL039_sorts/")
+setwd("~/post-transcriptional-idrs/fig1_ms1/iJL039_sorts/")
 wt = format_flow_data(data.frame(exprs(read.FCS('20200718_Yeast GFP RFP Ratio SortK562 d1 AD 8_H2_lib_d6.fcs',transformation = FALSE))),
                       fsca_low = 75000,fsca_high = 245000, rat = 1.4)
 wt = wt[wt$good_ah == T & wt$good_ssc==T, ]
-setwd("~/yeast-idr-analysis-main/fig3_ms1/IAA_sorts/")
+setwd("~/post-transcriptional-idrs/fig3_ms1/IAA_sorts/")
 
 ccr4 = format_flow_data(data.frame(exprs(read.FCS('ccr4maid_flow.fcs',transformation = FALSE))),
                         fsca_low = 75000,fsca_high = 245000, rat = 1.4)

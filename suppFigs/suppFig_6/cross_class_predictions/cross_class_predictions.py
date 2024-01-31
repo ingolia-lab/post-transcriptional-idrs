@@ -9,15 +9,15 @@ warnings.filterwarnings(action='ignore')
 
 #load composition peps and models
 home_dir = os.path.expanduser('~')
-path = home_dir + '/yeast-idr-analysis-main/fig6_ms1/idr_logit_models/composition_model_logit_singles/compo_single_model_trained.pkl'
+path = home_dir + '/post-transcriptional-idrs/fig6_ms1/idr_logit_models/composition_model_logit_singles/compo_single_model_trained.pkl'
 compo_model = pickle.load(open(path,'rb'))
-compo_peps = pd.read_csv("~/yeast-idr-analysis-main/HMM_analysis/composition.csv")
+compo_peps = pd.read_csv("~/post-transcriptional-idrs/HMM_analysis/composition.csv")
 
 
 #load motif peps and models
-path = home_dir + '/yeast-idr-analysis-main/fig6_ms1/idr_logit_models/motif_model_logit/motif_model_trained.pkl'
+path = home_dir + '/post-transcriptional-idrs/fig6_ms1/idr_logit_models/motif_model_logit/motif_model_trained.pkl'
 motif_model = pickle.load(open(path, 'rb'))
-submotifs = pd.read_csv('~/yeast-idr-analysis-main/HMM_analysis/subMotifs_hmm.csv')     
+submotifs = pd.read_csv('~/post-transcriptional-idrs/HMM_analysis/subMotifs_hmm.csv')     
 active_motifs = submotifs[(submotifs['state'] == 'active') & (submotifs['seq'].str.len() > 2)]
 
 #add AAs
@@ -38,7 +38,7 @@ active_motifs['compo_model'] = motif_probs_compo_model[:,1]
 
 
 #write predictions out
-path = home_dir + '/yeast-idr-analysis-main/suppFigs/suppFig_6/cross_class_predictions/'
+path = home_dir + '/post-transcriptional-idrs/suppFigs/suppFig_6/cross_class_predictions/'
 compo_path = os.path.join(path,'compo_pred_motif_model.csv')
 motif_path = os.path.join(path,'motif_pred_compo_model.csv')
 

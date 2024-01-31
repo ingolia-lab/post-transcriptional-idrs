@@ -1,10 +1,10 @@
-setwd("~/yeast-idr-analysis-main/")
+setwd("~/post-transcriptional-idrs/")
 load(file = 'gateFlow.R')
 library(flowCore)
 library(ggpubr)
 library(ggplot2)
 
-setwd("~/yeast-idr-analysis-main/fig5_ms1/Eap1_series_flow/")
+setwd("~/post-transcriptional-idrs/fig5_ms1/Eap1_series_flow/")
 
 
 file_names = list.files(pattern ='fcs')
@@ -43,7 +43,7 @@ eap1_flow = ggplot(df, aes(x=variant, y=val, fill='black')) +
         legend.position = "none",
         panel.border = element_blank())
 
-setwd("~/yeast-idr-analysis-main/fig5_ms1/Eap1_series_flow/")
+setwd("~/post-transcriptional-idrs/fig5_ms1/Eap1_series_flow/")
 if(!file.exists('eap1_flow_series.pdf')){
   ggsave('eap1_flow_series.pdf', eap1_flow,height = 7, width=10, units='cm')
 }

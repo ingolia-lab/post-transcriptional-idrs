@@ -1,6 +1,6 @@
-setwd("~/yeast-idr-analysis-main/")
+setwd("~/post-transcriptional-idrs/")
 load(file = 'gateFlow.R')
-setwd('~/yeast-idr-analysis-main/fig1_ms1/frag_vs_sortseq_analysis/Joseph T/')
+setwd('~/post-transcriptional-idrs/fig1_ms1/frag_vs_sortseq_analysis/Joseph T/')
 library(flowCore)
 library(minpack.lm)
 library(ggplot2)
@@ -47,7 +47,7 @@ flow_vs_seq = ggplot(df, aes(x = sort_score, y = ratio, color=colors)) +
         legend.position = "none",
         panel.border = element_blank())
 
-setwd("~/yeast-idr-analysis-main/fig1_ms1/")
+setwd("~/post-transcriptional-idrs/fig1_ms1/")
 ggsave('frag_vs_sortSeq.pdf',plot=flow_vs_seq, width = 4.95, height = 3.35, units = 'cm')
 
 

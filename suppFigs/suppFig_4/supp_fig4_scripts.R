@@ -4,9 +4,9 @@ library(viridis)
 library(ggpointdensity)
 library(ggrastr)
 library(flowCore)
-setwd("~/yeast-idr-analysis-main/")
+setwd("~/post-transcriptional-idrs/")
 load(file = 'gateFlow.R')
-setwd('~/yeast-idr-analysis-main/suppFigs/suppFig_4/')
+setwd('~/post-transcriptional-idrs/suppFigs/suppFig_4/')
 dms_flow = format_flow_data(data.frame(exprs(read.FCS('dms_yfpRFP_sort.fcs',transformation = FALSE))),
                       fsca_low = 75000,fsca_high = 245000, rat = 1.4)
 dms_flow = dms_flow[dms_flow$good_ah == T & dms_flow$good_ssc==T, ]
@@ -30,18 +30,18 @@ dms_density = ggplot(data = dms_flow, aes(x=Ratio..FITC.A.PE.Texas.Red.A)) +
 #save and set color gradient in illustrator
 ggsave('dms_yfpRFP.pdf', dms_density, width = 4.8, height = 4.8,units='cm')
 
-setwd("~/yeast-idr-analysis-main/processed_scores/")
+setwd("~/post-transcriptional-idrs/processed_scores/")
 dms_scores = read.csv('dms_scores.csv')
 wt_scores = read.csv("wt_scores_sortSeq.csv")
 #get repressor and inactive_control frag list
-setwd("~/yeast-idr-analysis-main/screening_lib_seqs/")
+setwd("~/post-transcriptional-idrs/screening_lib_seqs/")
 active_frags = read_xlsx('dms_library_seqs.xlsx', sheet = 'active_DMS')
 inact_frags = read_xlsx('dms_library_seqs.xlsx', sheet = 'inactive_DMS')
 
 active_frags = unique(sub("_[^_]+_[^_]+$", "", active_frags$Peptide))
 inact_frags = unique(sub("_[^_]+_[^_]+$", "", inact_frags$Peptide))
 
-setwd("~/yeast-idr-analysis-main/suppFigs/suppFig_4/")
+setwd("~/post-transcriptional-idrs/suppFigs/suppFig_4/")
 
 #comparison between replicates for activity and stability scores
 rep1_v_rep2_act = ggplot(data = dms_scores, mapping = aes(x=activity_score_r1, y = activity_score_r2)) +
@@ -92,7 +92,7 @@ dms_v_wt_score = ggplot(dms_wt_peps, aes(x=wt_score,y=avg_activity,color=inact))
         legend.position = "none",
         panel.border = element_blank())
 
-setwd("~/yeast-idr-analysis-main/suppFigs/suppFig_4/")
+setwd("~/post-transcriptional-idrs/suppFigs/suppFig_4/")
 ggsave('dms_vs_wt_actScore.pdf',dms_v_wt_score, height = 6, width = 6, units = 'cm')
 
 

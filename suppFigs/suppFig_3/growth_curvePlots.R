@@ -1,4 +1,4 @@
-setwd("~/yeast-idr-analysis-main/suppFigs/suppFig_3/")
+setwd("~/post-transcriptional-idrs/suppFigs/suppFig_3/")
 library(ggplot2)
 library(reshape2)
 library(RColorBrewer)

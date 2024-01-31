@@ -1,5 +1,5 @@
 library(ggplot2)
-setwd("~/yeast-idr-analysis-main/suppFigs/suppFig_6/cross_class_predictions/")
+setwd("~/post-transcriptional-idrs/suppFigs/suppFig_6/cross_class_predictions/")
 
 compo = read.csv("compo_pred_motif_model.csv")
 motif = read.csv("motif_pred_compo_model.csv")

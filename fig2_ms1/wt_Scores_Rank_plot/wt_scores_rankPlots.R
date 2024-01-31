@@ -1,7 +1,7 @@
 library(ggplot2)
 library(ggrastr)
 
-setwd("~/yeast-idr-analysis-main/processed_scores/")
+setwd("~/post-transcriptional-idrs/processed_scores/")
 scores = read.csv('wt_yfp_irfp_scores.csv')
 protLen = read.csv("protein_len.csv")
 
@@ -32,7 +32,7 @@ rank_order_plot = ggplot(df, aes(x=ranked,y=avg_act))+
 rank_order_plot = rasterize(rank_order_plot, layers='Point',dpi=300)
 
   
-setwd("~/yeast-idr-analysis-main/fig2_ms1/wt_Scores_Rank_plot/")
+setwd("~/post-transcriptional-idrs/fig2_ms1/wt_Scores_Rank_plot/")
 
 if(!file.exists('rank_plot.pdf')){
   ggsave('rank_plot.pdf',rank_order_plot,height = 5, width = 10, units='cm')

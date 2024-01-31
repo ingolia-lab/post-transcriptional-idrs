@@ -4,7 +4,7 @@ library(ggrastr)
 library(ggpubr)
 
 
-setwd("~/yeast-idr-analysis-main/processed_scores/")
+setwd("~/post-transcriptional-idrs/processed_scores/")
 
 ccr4 = read.csv("ccr4_scores.csv")
 pop2 = read.csv('pop2_scores.csv')
@@ -65,7 +65,7 @@ dcp2_cor = rasterize(dcp2_cor, layers='Point',dpi=300)
 composite_plot <- ccr4_cor + pop2_cor + dcp2_cor
 composite_plot <- composite_plot + plot_layout(ncol = 3)
 
-setwd("~/yeast-idr-analysis-main/suppFigs/suppFig_3/")
+setwd("~/post-transcriptional-idrs/suppFigs/suppFig_3/")
 if(!file.exists('degron_score_cors.pdf')){
   ggsave('degron_score_cors.pdf',composite_plot, height = 8, width = 32, units = 'cm')
 }

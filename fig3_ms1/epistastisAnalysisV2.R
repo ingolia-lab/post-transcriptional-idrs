@@ -6,7 +6,7 @@ library(ggpointdensity)
 library(ggrastr)
 
 
-setwd("~/yeast-idr-analysis-main/processed_scores/")
+setwd("~/post-transcriptional-idrs/processed_scores/")
 wt = read.csv("wt_scores_sortSeq.csv")
 wt = wt[wt$iRFP_mean >= -1,] #select for only stable peps 
 wt = wt[,c(2:4)] #remove stability scores for downstream analysis
@@ -117,7 +117,7 @@ dcp2_plot = rasterize(dcp2_plot, layers='Point',dpi=300)
 composite_plot <- ccr4_plot + pop2_plot + dcp2_plot
 composite_plot <- composite_plot + plot_layout(ncol = 3)
 
-setwd("~/yeast-idr-analysis-main/fig3_ms1/")
+setwd("~/post-transcriptional-idrs/fig3_ms1/")
 if(!file.exists('wt_vs_maid_actiivty.pdf')){
   ggsave('wt_vs_maid_actiivty.pdf', composite_plot,height=5, width=20, units='cm')
 }
@@ -152,7 +152,7 @@ num_diff = length(which(rowSums(upset_input[,2:4]) > 0))
 num_noLoss = length(which(rowSums(upset_input[,2:4]) == 0))
 
 ######plot indiv protein comparison across conditions
-setwd("~/yeast-idr-analysis-main/processed_scores/")
+setwd("~/post-transcriptional-idrs/processed_scores/")
 protLen = read.csv("protein_len.csv")
 
 master = merge(merge(ccr4_fit, pop2_fit, by='Peptide'),dcp2_fit, by='Peptide')
@@ -199,7 +199,7 @@ edc1_epi <- ggplot(edc1_zoom, aes(x = start, y = YFP_mean.x)) +
         legend.position = "none",
         panel.border = element_blank())
 
-setwd("~/yeast-idr-analysis-main/fig3_ms1/edc1_zoom/")
+setwd("~/post-transcriptional-idrs/fig3_ms1/edc1_zoom/")
 if(!file.exists('edc1_zoom.pdf')){
   ggsave('edc1_zoom.pdf',edc1_epi,width = 8, height=5, units='cm')
 }

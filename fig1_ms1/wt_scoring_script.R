@@ -2,11 +2,11 @@ library(stats4)
 
 
 #load rep1 and rep2 YFP files and iRFP files
-setwd("~/yeast-idr-analysis-main/raw_counts/WT_sortSeq/WT_sortSeq_Rep1/")
+setwd("~/post-transcriptional-idrs/raw_counts/WT_sortSeq/WT_sortSeq_Rep1/")
 wt_yfp_R1 = list.files(pattern ='.txt')[!grepl('iRFP',list.files(pattern='.txt'))]
 wt_irfp_R1 = list.files(pattern ='.txt')[!grepl('YFP',list.files(pattern='.txt'))]
 
-setwd("~/yeast-idr-analysis-main/raw_counts/WT_sortSeq/WT_sortSeq_Rep2/")
+setwd("~/post-transcriptional-idrs/raw_counts/WT_sortSeq/WT_sortSeq_Rep2/")
 wt_yfp_R2 = list.files(pattern ='.txt')[!grepl('iRFP',list.files(pattern='.txt'))]
 wt_irfp_R2 = list.files(pattern ='.txt')[!grepl('YFP',list.files(pattern='.txt'))]
 
@@ -26,12 +26,12 @@ format_counts = function(files){
 }
 
 #format column names
-setwd("~/yeast-idr-analysis-main/raw_counts/WT_sortSeq/WT_sortSeq_Rep1/")
+setwd("~/post-transcriptional-idrs/raw_counts/WT_sortSeq/WT_sortSeq_Rep1/")
 yfp_counts_r1 = format_counts(wt_yfp_R1)
 irfp_counts_r1 = format_counts(wt_irfp_R1)
 colnames(yfp_counts_r1) = c("Name",'US_1','US_2','FL','FR','L','R')
 colnames(irfp_counts_r1) = c('Name','FL','FR','L','R','US_1','US_2')
-setwd("~/yeast-idr-analysis-main/raw_counts/WT_sortSeq/WT_sortSeq_Rep2/")
+setwd("~/post-transcriptional-idrs/raw_counts/WT_sortSeq/WT_sortSeq_Rep2/")
 yfp_counts_r2 = format_counts(wt_yfp_R2)
 irfp_counts_r2 = format_counts(wt_irfp_R2)
 colnames(yfp_counts_r2) = c("Name",'US_1','US_2','FL','FR','L','R')
@@ -124,7 +124,7 @@ scores$avg_activity = rowMeans(scores[,c("activity_score_r1",'activity_score_r2'
 scores$activity_sd = apply(scores[,c("activity_score_r1",'activity_score_r2')],1,sd)
 scores$avg_stability = rowMeans(scores[,c("stability_score_r1",'stability_score_r2')])
 scores$stability_sd = apply(scores[,c("activity_score_r1",'activity_score_r2')],1,sd)
-setwd("~/yeast-idr-analysis-main/processed_scores/")
+setwd("~/post-transcriptional-idrs/processed_scores/")
 
 write.csv(all_counts,"wt_yfp_iRFP_counts.csv")
 write.csv(scores, 'wt_yfp_irfp_scores.csv')

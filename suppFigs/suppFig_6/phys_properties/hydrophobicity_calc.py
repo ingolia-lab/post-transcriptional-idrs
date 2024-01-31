@@ -4,12 +4,12 @@ import numpy as np
 import localcider
 from localcider.sequenceParameters import SequenceParameters
 
-peps = pd.read_csv("~/yeast-idr-analysis-main/processed_scores/wt_yfp_irfp_scores.csv")
+peps = pd.read_csv("~/post-transcriptional-idrs/processed_scores/wt_yfp_irfp_scores.csv")
 #remove inactives that are unstable 
 peps =  peps[(peps['avg_stability'] > -1) | (peps['avg_activity'] <= -1)]
 
 
-seqs = pd.read_csv("~/yeast-idr-analysis-main/screening_lib_seqs/wt_library_translation.csv")
+seqs = pd.read_csv("~/post-transcriptional-idrs/screening_lib_seqs/wt_library_translation.csv")
 
 peps =pd.merge(peps, seqs, on='Name', how='inner')
 peps['param_seq'] = [SequenceParameters(x) for x in list(peps['seq'])]

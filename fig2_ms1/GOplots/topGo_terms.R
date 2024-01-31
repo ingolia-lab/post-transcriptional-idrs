@@ -1,6 +1,6 @@
 library(ggplot2)
 library(viridis)
-setwd("~/yeast-idr-analysis-main/processed_scores/")
+setwd("~/post-transcriptional-idrs/processed_scores/")
 
 scores = read.csv("wt_yfp_irfp_scores.csv")
 scores$yorf = sapply(scores$Name, function(x){sub("^(.*?)_.*", "\\1", x)})
@@ -11,7 +11,7 @@ repressors = unique(repressors$yorf)
 
 
 #for GO
-setwd("~/yeast-idr-analysis-main/fig2_ms1/GOplots/")
+setwd("~/post-transcriptional-idrs/fig2_ms1/GOplots/")
 if(!(file.exists('repressive_orfs.txt')) & !(file.exists('all_orfs.txt'))){
   write.table(repressors, file = 'repressive_orfs.txt',sep='\t', row.names = F, quote = F)
   write.table(unique(scores$yorf), file='all_orfs.txt', sep='\t', row.names=F, quote= F)
@@ -79,7 +79,7 @@ full_terms = ggplot(go_terms, aes(x = as.numeric(fold_enrichment), y =GO_process
   labs(x = "Fold Enrichment", y = "GO Term") + guides(size = guide_legend(title = "Repress Found")) + 
   theme_minimal()  +  theme(axis.text.y = element_text(size = 12))
 
-setwd("~/yeast-idr-analysis-main/suppFigs/suppFig_2/")
+setwd("~/post-transcriptional-idrs/suppFigs/suppFig_2/")
 if(!file.exists('full_GOtermsV2.pdf')){
   ggsave('full_GOtermsV2.pdf',full_terms,height = 22, width = 13, units='in')
 }

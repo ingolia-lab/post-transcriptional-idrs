@@ -1,5 +1,5 @@
 library(ggplot2)
-setwd("~/yeast-idr-analysis-main/processed_scores/")
+setwd("~/post-transcriptional-idrs/processed_scores/")
 
 sgd = read.delim("SGD_features.tab", header=FALSE, quote="",
                  col.names=c("sgdid", "type", "qual", "name", "gene", "alias",
@@ -12,7 +12,7 @@ scores$yorf = toupper(substr(scores$yorf, 1, nchar(scores$yorf)-1))
 scores$sysName = ifelse(scores$yorf %in% sgd$gene,
                         sgd[match(scores$yorf,sgd$gene),'name'],scores$yorf)
 
-setwd("~/yeast-idr-analysis-main/suppFigs/suppFig_2/rbp_agreement/")
+setwd("~/post-transcriptional-idrs/suppFigs/suppFig_2/rbp_agreement/")
 rbp = read.csv("yeast_RBP_dataset.csv")
 #sum up datasets that ID the protein as an RBP
 rbp$occurrences = sapply(seq(1,nrow(rbp)), function(x){sum(grepl('YES',rbp[x,5:12]))})

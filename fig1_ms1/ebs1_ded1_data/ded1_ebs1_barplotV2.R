@@ -1,6 +1,6 @@
-setwd("~/yeast-idr-analysis-main/")
+setwd("~/post-transcriptional-idrs/")
 load(file = 'gateFlow.R')
-setwd("~/yeast-idr-analysis-main/fig1_ms1/ebs1_ded1_data/")
+setwd("~/post-transcriptional-idrs/fig1_ms1/ebs1_ded1_data/")
 
 library(flowCore)
 library(ggpubr)
@@ -44,7 +44,7 @@ frags = ggplot(df, aes(x=name, y=val, fill='black')) +
         legend.position = "none",
         panel.border = element_blank())
 
-setwd("~/yeast-idr-analysis-main/fig1_ms1/")
+setwd("~/post-transcriptional-idrs/fig1_ms1/")
 ggsave('ebs_ded_barplot.pdf',plot=frags, width = 4.95, height = 3.35, units = 'cm')
 
 ###below all goes to supp
@@ -67,7 +67,7 @@ irfp_frags = ggplot(df_irfp, aes(x=name, y=val, fill='black')) +
         legend.position = "none",
         panel.border = element_blank())
 
-setwd("~/yeast-idr-analysis-main/suppFigs/suppFig_1/")
+setwd("~/post-transcriptional-idrs/suppFigs/suppFig_1/")
 ggsave('iRFP_barplot.pdf',plot=irfp_frags, width = 4.5, height = 4, units = 'cm')
 
 

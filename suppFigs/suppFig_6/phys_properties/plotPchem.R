@@ -3,7 +3,7 @@ library(ggpubr)
 library(viridis)
 library(stringr)
 
-setwd("~/yeast-idr-analysis-main/suppFigs/suppFig_6/phys_properties/")
+setwd("~/post-transcriptional-idrs/suppFigs/suppFig_6/phys_properties/")
 
 omega = read.csv("omega_vals.csv")
 omega_plot = ggplot(omega, aes(x=activity,y=omega_aro)) + 

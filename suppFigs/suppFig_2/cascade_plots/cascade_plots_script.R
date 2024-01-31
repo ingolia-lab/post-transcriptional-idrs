@@ -2,7 +2,7 @@
 library(ggplot2)
 library(ggrastr)
 
-setwd("~/yeast-idr-analysis-main/processed_scores/")
+setwd("~/post-transcriptional-idrs/processed_scores/")
 scores = read.csv('wt_yfp_irfp_scores.csv')
 protLen = read.csv("protein_len.csv")
 
@@ -47,7 +47,7 @@ stabilities_plot = ggplot(ordered_stab, aes(x=rank, y=avg_stability.x,color=rank
         legend.position = "none",
         panel.border = element_blank())
 
-setwd("~/yeast-idr-analysis-main/suppFigs/suppFig_2/cascade_plots/")
+setwd("~/post-transcriptional-idrs/suppFigs/suppFig_2/cascade_plots/")
 if(!file.exists('stability_cascade.pdf') & !file.exists('activity_cascade.pdf')){
   ggsave('activity_cascade.pdf', rasterize(activities_plot, layers = 'Point',dpi=300),width=12, height=8, units='cm')
   ggsave('stability_cascade.pdf', rasterize(stabilities_plot, layers = 'Point',dpi=300),width=12, height=8, units='cm')
@@ -58,7 +58,7 @@ if(!file.exists('stability_cascade.pdf') & !file.exists('activity_cascade.pdf'))
 
 
 
-setwd("~/yeast-idr-analysis-main/suppFigs/suppFig_2/")
+setwd("~/post-transcriptional-idrs/suppFigs/suppFig_2/")
 ggsave('orfs_peps_rank.pdf',rasterize(cascade_plot, layers='Point',dpi=300), width = 12, height=8, units='cm')
 
 #######??????

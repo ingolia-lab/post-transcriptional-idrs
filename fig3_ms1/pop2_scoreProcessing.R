@@ -17,11 +17,11 @@ format_counts = function(files){
 
 
 #load rep1 and rep2 YFP files and iRFP files
-setwd("~/yeast-idr-analysis-main/raw_counts/Pop2_sortSeq/Pop2_sortSeq_Rep1/")
+setwd("~/post-transcriptional-idrs/raw_counts/Pop2_sortSeq/Pop2_sortSeq_Rep1/")
 pop2_rep1 = format_counts(list.files(pattern ='.txt'))
 colnames(pop2_rep1)[2:ncol(pop2_rep1)] = sapply(strsplit(colnames(pop2_rep1)[2:ncol(pop2_rep1)],'_'), 
                                                 function(x){x[4]})
-setwd("~/yeast-idr-analysis-main/raw_counts/Pop2_sortSeq/Pop2_sortSeq_Rep2/")
+setwd("~/post-transcriptional-idrs/raw_counts/Pop2_sortSeq/Pop2_sortSeq_Rep2/")
 pop2_rep2 = list.files(pattern ='.txt')
 pop2_rep2 = format_counts(list.files(pattern ='.txt'))
 colnames(pop2_rep2)[2:ncol(pop2_rep2)] = sapply(strsplit(colnames(pop2_rep2)[2:ncol(pop2_rep2)],'_'), 
@@ -83,6 +83,6 @@ scores = all_counts[,c('Name','activity_score_r1','activity_score_r2')]
 scores$avg_activity = rowMeans(scores[c('activity_score_r1','activity_score_r2')])
 scores$activity_sd = apply(scores[c('activity_score_r1','activity_score_r2')],1,sd)
 
-setwd('~/yeast-idr-analysis-main/processed_scores/')
+setwd('~/post-transcriptional-idrs/processed_scores/')
 write.csv(all_counts, "pop2_allCounts.csv",row.names = F)
 write.csv(scores, 'pop2_scores.csv',row.names = F)

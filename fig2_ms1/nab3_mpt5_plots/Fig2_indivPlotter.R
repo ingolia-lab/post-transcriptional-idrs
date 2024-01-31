@@ -1,7 +1,7 @@
 library(ggplot2)
 library(gridExtra)
 
-setwd("~/yeast-idr-analysis-main/processed_scores/")
+setwd("~/post-transcriptional-idrs/processed_scores/")
 scores = read.csv('wt_yfp_irfp_scores.csv')
 protLen = read.csv("protein_len.csv")
 
@@ -52,7 +52,7 @@ Mpt5_plot <- ggplot(Mpt5, aes(x = start, y = avg_activity)) +
         panel.border = element_blank())
 
 
-setwd("~/yeast-idr-analysis-main/fig2_ms1/nab3_mpt5_plots/")
+setwd("~/post-transcriptional-idrs/fig2_ms1/nab3_mpt5_plots/")
 if(!file.exists('nab3_plot.pdf') & !file.exists('mpt5_plots.pdf')){
   ggsave('nab3_plot.pdf', plot=nab3_plot, height = 5, width = 10, units='cm')
   ggsave('mpt5_plot.pdf', plot=Mpt5_plot, height = 5, width = 10, units='cm')
@@ -82,7 +82,7 @@ eap1_plot <- ggplot(eap1, aes(x = start, y = avg_activity)) +
         legend.position = "none",
         panel.border = element_blank())
 
-setwd('~/yeast-idr-analysis-main/suppFigs/suppFig_5/')
+setwd('~/post-transcriptional-idrs/suppFigs/suppFig_5/')
 if(!file.exists('eap1_fl.pdf')){
   ggsave('eap1_fl.pdf',eap1_plot, height = 5, width = 10, units='cm')
 }

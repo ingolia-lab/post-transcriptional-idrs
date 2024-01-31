@@ -1,6 +1,6 @@
-setwd("~/yeast-idr-analysis-main/")
+setwd("~/post-transcriptional-idrs/")
 load(file = 'gateFlow.R')
-setwd('~/yeast-idr-analysis-main/fig1_ms1/iJL039_sorts/')
+setwd('~/post-transcriptional-idrs/fig1_ms1/iJL039_sorts/')
 
 library(flowCore)
 library(ggplot2)
@@ -29,11 +29,11 @@ rat_density = ggplot(data = yfp_sort, aes(x=Ratio..FITC.A.PE.Texas.Red.A)) +
         panel.border = element_blank())
 
 #color gradient in illustartor
-setwd("~/yeast-idr-analysis-main/fig1_ms1/")
+setwd("~/post-transcriptional-idrs/fig1_ms1/")
 ggsave('gated_yfpRFP.pdf', rat_density, width = 4.8, height = 4.1,units='cm')
 
 #iRFP plots, need to use ggplot
-setwd('~/yeast-idr-analysis-main/fig1_ms1/iJL039_sorts/')
+setwd('~/post-transcriptional-idrs/fig1_ms1/iJL039_sorts/')
 iRFP_sort = data.frame(exprs(read.FCS('20200718_Yeast APCCy7,2f, RFP Ratio Sort Yeast.fcs', transformation = F)))
 
 iRFP_sort = format_flow_data(df=iRFP_sort,fsca_low = 75000,fsca_high = 245000)
@@ -50,7 +50,7 @@ irfp_plot = ggplot(data = iRFP_sort, mapping = aes(x=PE.Texas.Red.A , y = APC.Cy
     
 
     
-setwd("~/yeast-idr-analysis-main/fig1_ms1/")
+setwd("~/post-transcriptional-idrs/fig1_ms1/")
 rasterize(irfp_plot, layers='Point', dpi=300)
 ggsave('irfp_RFP_gating.pdf',height = 9, width = 9, units = 'cm')
 

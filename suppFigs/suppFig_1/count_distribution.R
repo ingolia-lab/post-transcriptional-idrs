@@ -1,5 +1,5 @@
 library(ggplot2)
-setwd("~/yeast-idr-analysis-main/processed_scores/")
+setwd("~/post-transcriptional-idrs/processed_scores/")
 scores = read.csv("wt_yfp_iRFP_counts.csv")
 
 #format data
@@ -39,6 +39,6 @@ read_dist <- ggplot() +
         legend.position = "none",
         panel.border = element_blank())
 
-setwd("~/yeast-idr-analysis-main/suppFigs/suppFig_1/")
+setwd("~/post-transcriptional-idrs/suppFigs/suppFig_1/")
 ggsave('pho_gcd_counts.pdf',read_dist, height = 5, width=5, units='cm' )
 

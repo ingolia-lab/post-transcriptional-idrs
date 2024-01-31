@@ -1,6 +1,6 @@
 library(ggplot2)
 
-setwd("~/yeast-idr-analysis-main/fig6_ms1/idr_logit_models/composition_model_logit_withDipeps/")
+setwd("~/post-transcriptional-idrs/fig6_ms1/idr_logit_models/composition_model_logit_withDipeps/")
 dipep_coef = read.csv('compo_dipep_coef.csv', na.strings = "")
 
 
@@ -21,7 +21,7 @@ dipep_coef = ggplot(df, aes(first_aa,second_aa, fill=coef)) + geom_tile()  +
         aspect.ratio = 1,
         panel.border = element_blank())
 
-setwd("~/yeast-idr-analysis-main/suppFigs/suppFig_6/dipep_coefs_heatmap/")
+setwd("~/post-transcriptional-idrs/suppFigs/suppFig_6/dipep_coefs_heatmap/")
 if(!file.exists('dipep_coefs.pdf')){
   ggsave('dipep_coefs.pdf', plot = dipep_coef, height = 7, width = 7, units = 'cm')
 }

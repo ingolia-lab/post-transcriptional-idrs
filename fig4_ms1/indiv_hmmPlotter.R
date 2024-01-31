@@ -1,8 +1,8 @@
 library(depmixS4)
 
-setwd("~/yeast-idr-analysis-main/processed_scores/")
+setwd("~/post-transcriptional-idrs/processed_scores/")
 dms_scores = read.csv("dms_scores.csv")
-setwd("~/yeast-idr-analysis-main/screening_lib_seqs/")
+setwd("~/post-transcriptional-idrs/screening_lib_seqs/")
 pep_seqs = read.csv("mutational_library_translation.csv")
 
 format_data <-function(df=dms_scores,pep, stability_cutoff = -1){
@@ -64,7 +64,7 @@ caf20_plot <- ggplot(caf20_df, aes(x = start, y = cutoff_activity)) +
         legend.position = "none",
         panel.border = element_blank())
 
-setwd("~/yeast-idr-analysis-main/fig4_ms1/")
+setwd("~/post-transcriptional-idrs/fig4_ms1/")
 if(!file.exists('pho92_hmm_plot.pdf') & !file.exists('caf20_hmm_plot.pdf')){
   ggsave('pho92_hmm_plot.pdf', pho92_plot, height = 4, width=6.5, units='cm')
   ggsave('caf20_hmm_plot.pdf', caf20_plot, height = 4, width=6.5, units='cm')
@@ -88,7 +88,7 @@ tis11_plot <- ggplot(tis11_df, aes(x = start, y = cutoff_activity)) +
         legend.position = "none",
         panel.border = element_blank())
 
-setwd("~/yeast-idr-analysis-main/fig4_ms1/")
+setwd("~/post-transcriptional-idrs/fig4_ms1/")
 if(!file.exists('tis11_hmm_plot.pdf')){
   ggsave('tis11_hmm_plot.pdf', tis11_plot, height = 4, width=6.5, units='cm')
 }
@@ -121,7 +121,7 @@ eap1_m2_plot <- ggplot(eap1_m2_df, aes(x = start, y = cutoff_activity)) +
         legend.position = "none",
         panel.border = element_blank())
 
-setwd("~/yeast-idr-analysis-main/fig5_ms1/eap1_motif_hmms/")
+setwd("~/post-transcriptional-idrs/fig5_ms1/eap1_motif_hmms/")
 if(!file.exists('eap1_motif_1.pdf') & !file.exists('eap1_motif_2.pdf')){
   ggsave('eap1_motif_1.pdf', eap1_m1_plot, height = 4, width=6.5, units='cm')
   ggsave('eap1_motif_2.pdf', eap1_m2_plot, height = 4, width=6.5, units='cm')
@@ -145,7 +145,7 @@ sgn1_plot <- ggplot(sgn1_df, aes(x = start, y = cutoff_activity)) +
         panel.border = element_blank())
 
 
-setwd("~/yeast-idr-analysis-main/fig6_ms1/")
+setwd("~/post-transcriptional-idrs/fig6_ms1/")
 ggsave('sgn1_hmm_plot.pdf',sgn1_plot, height = 6.5, width=6.5, units='cm') #save as square
 
 

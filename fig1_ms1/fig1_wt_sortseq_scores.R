@@ -1,6 +1,6 @@
 #plotting activity scores from the WT_sort_Seq for paper. Stability and activty scores
 
-setwd("~/yeast-idr-analysis-main/processed_scores/")
+setwd("~/post-transcriptional-idrs/processed_scores/")
 wt_scores = read.csv("wt_yfp_irfp_scores.csv")
 
 library(ggplot2)
@@ -20,7 +20,7 @@ geom_pointdensity(show.legend = FALSE) + scale_color_viridis() +
 
 rasterize(p, layers='Point', dpi=300)
 print(cor(wt_scores$activity_score_r1,wt_scores$activity_score_r2))
-setwd("~/yeast-idr-analysis-main/fig1_ms1/")
+setwd("~/post-transcriptional-idrs/fig1_ms1/")
 ggsave('wt_sortSeq_rep1_rep2.pdf',height = 8, width = 8)
 
 #plot correlation between stability scores
@@ -34,7 +34,7 @@ stability = ggplot(data = wt_scores, mapping = aes(x=stability_score_r1, y = sta
 
 rasterize(stability, layers='Point', dpi=300)
 print(cor(wt_scores$stability_score_r1,wt_scores$stability_score_r2))
-setwd("~/yeast-idr-analysis-main/suppFigs/suppFig_1/")
+setwd("~/post-transcriptional-idrs/suppFigs/suppFig_1/")
 ggsave('wt_stability_rep1rep2.pdf',height = 8, width = 8)
 
 

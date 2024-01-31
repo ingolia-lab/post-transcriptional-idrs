@@ -1,11 +1,11 @@
-setwd("~/yeast-idr-analysis-main/")
+setwd("~/post-transcriptional-idrs/")
 load(file = 'gateFlow.R')
 library(flowCore)
 library(ggpubr)
 library(ggplot2)
 
 
-setwd("~/yeast-idr-analysis-main/fig5_ms1/tis11_mut_flow/")
+setwd("~/post-transcriptional-idrs/fig5_ms1/tis11_mut_flow/")
 
 
 file_names = list.files(pattern ='fcs')
@@ -46,5 +46,5 @@ ratios = ggplot(df, aes(x=gene, y=val, fill=cond)) +
         legend.position = "none",
         panel.border = element_blank())
 
-setwd("~/yeast-idr-analysis-main/fig5_ms1/")
+setwd("~/post-transcriptional-idrs/fig5_ms1/")
 ggsave("tis11_flow.pdf",ratios, height = 7, width=5, units='cm')

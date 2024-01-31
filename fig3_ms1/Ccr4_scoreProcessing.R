@@ -16,11 +16,11 @@ format_counts = function(files){
 }
 
 #load rep1 and rep2 YFP files and iRFP files
-setwd("~/yeast-idr-analysis-main/raw_counts/Ccr4_sortSeq/Ccr4_Rep1/")
+setwd("~/post-transcriptional-idrs/raw_counts/Ccr4_sortSeq/Ccr4_Rep1/")
 ccr4_rep1 = format_counts(list.files(pattern ='.txt'))
 colnames(ccr4_rep1)[2:ncol(ccr4_rep1)] = sapply(strsplit(colnames(ccr4_rep1)[2:ncol(ccr4_rep1)],'_'), 
                                                 function(x){x[5]})
-setwd("~/yeast-idr-analysis-main/raw_counts/Ccr4_sortSeq/Ccr4_Rep2/")
+setwd("~/post-transcriptional-idrs/raw_counts/Ccr4_sortSeq/Ccr4_Rep2/")
 ccr4_rep2 = format_counts(list.files(pattern ='.txt'))
 colnames(ccr4_rep2)[2:ncol(ccr4_rep2)] = sapply(strsplit(colnames(ccr4_rep2)[2:ncol(ccr4_rep2)],'_'), 
                                                 function(x){x[5]})
@@ -81,6 +81,6 @@ scores = all_counts[,c('Name','activity_score_r1','activity_score_r2')]
 scores$avg_activity = rowMeans(scores[c('activity_score_r1','activity_score_r2')])
 scores$activity_sd = apply(scores[c('activity_score_r1','activity_score_r2')],1,sd)
 
-setwd('~/yeast-idr-analysis-main/processed_scores/')
+setwd('~/post-transcriptional-idrs/processed_scores/')
 write.csv(all_counts, "ccr4_allCounts.csv",row.names = F)
 write.csv(scores, 'ccr4_scores.csv',row.names = F)

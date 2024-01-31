@@ -7,9 +7,9 @@ warnings.filterwarnings(action='ignore')
 
 
 
-dms_scores = pd.read_csv("~/yeast-idr-analysis-main/processed_scores/dms_scores.csv")
-compo= pd.read_csv("~/yeast-idr-analysis-main/HMM_analysis/composition.csv")
-dms_trans = pd.read_csv('~/yeast-idr-analysis-main/screening_lib_seqs/mutational_library_translation.csv')
+dms_scores = pd.read_csv("~/post-transcriptional-idrs/processed_scores/dms_scores.csv")
+compo= pd.read_csv("~/post-transcriptional-idrs/HMM_analysis/composition.csv")
+dms_trans = pd.read_csv('~/post-transcriptional-idrs/screening_lib_seqs/mutational_library_translation.csv')
 
 #merge dataset, select peptides that are stable, and only include WT and scrambles of hte composition peps
 dms_scores = pd.merge(dms_scores, dms_trans, left_on='Name', right_on='name', how='inner')

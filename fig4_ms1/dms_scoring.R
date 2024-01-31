@@ -16,13 +16,13 @@ format_counts = function(files){
 }
 
 #load rep1 and rep2 YFP files and iRFP files
-setwd("~/yeast-idr-analysis-main/raw_counts/dms_scan_sortSeq/mutscan_rep1/")
+setwd("~/post-transcriptional-idrs/raw_counts/dms_scan_sortSeq/mutscan_rep1/")
 dms_yfp_R1 = format_counts(list.files(pattern ='.txt')[!grepl('iRFP',list.files(pattern='.txt'))])
 colnames(dms_yfp_R1) = c('Name','US-1','US-2','FL','FR','L','R')
 dms_irfp_R1 = format_counts(list.files(pattern ='.txt')[!grepl('YFP',list.files(pattern='.txt'))])
 colnames(dms_irfp_R1) = c('Name','FL','FR','L','R','US-1','US-2')
 
-setwd("~/yeast-idr-analysis-main/raw_counts/dms_scan_sortSeq/mutscan_rep2/")
+setwd("~/post-transcriptional-idrs/raw_counts/dms_scan_sortSeq/mutscan_rep2/")
 dms_yfp_R2 = format_counts(list.files(pattern ='.txt')[!grepl('iRFP',list.files(pattern='.txt'))])
 colnames(dms_yfp_R2) = c('Name','US','FL','FR','L','R')
 dms_irfp_R2 = format_counts(list.files(pattern ='.txt')[!grepl('YFP',list.files(pattern='.txt'))])
@@ -110,7 +110,7 @@ scores$activity_sd = apply(scores[,c("activity_score_r1",'activity_score_r2')],1
 scores$avg_stability = rowMeans(scores[,c("stability_score_r1",'stability_score_r2')])
 scores$stability_sd = apply(scores[,c("activity_score_r1",'activity_score_r2')],1,sd)
 
-setwd("~/yeast-idr-analysis-main/processed_scores/")
+setwd("~/post-transcriptional-idrs/processed_scores/")
 write.csv(all_counts,"dms_counts.csv")
 write.csv(scores, 'dms_scores.csv')
 

@@ -1,10 +1,10 @@
-setwd("~/yeast-idr-analysis-main/")
+setwd("~/post-transcriptional-idrs/")
 load(file = 'gateFlow.R')
 library(flowCore)
 library(ggpubr)
 library(ggplot2)
 
-setwd("~/yeast-idr-analysis-main/fig4_ms1/select_mut_flow/") 
+setwd("~/post-transcriptional-idrs/fig4_ms1/select_mut_flow/") 
 
 file_names = list.files(pattern ='fcs')
 list_tables <- lapply(file_names, 
@@ -47,5 +47,5 @@ ratios = ggplot(df, aes(x=gene, y=val, fill=cond)) +
         legend.position = "none",
         panel.border = element_blank())
 
-setwd("~/yeast-idr-analysis-main/fig4_ms1/")
+setwd("~/post-transcriptional-idrs/fig4_ms1/")
 ggsave("mut_ratios.pdf",ratios, height = 7, width=7, units='cm')

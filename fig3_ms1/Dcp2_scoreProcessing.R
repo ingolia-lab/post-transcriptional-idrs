@@ -15,13 +15,13 @@ format_counts = function(files){
   return(counts)
 }
 
-setwd("~/yeast-idr-analysis-main/raw_counts/Dcp2_sortSeq/Dcp2_sort_Rep1/")
+setwd("~/post-transcriptional-idrs/raw_counts/Dcp2_sortSeq/Dcp2_sort_Rep1/")
 dcp2_rep1 = format_counts(list.files(pattern ='.txt'))
 colnames(dcp2_rep1)[2:ncol(dcp2_rep1)] = sapply(strsplit(colnames(dcp2_rep1)[2:ncol(dcp2_rep1)],'_'), 
                                                 function(x){x[4]})
 colnames(dcp2_rep1)[6:7] = c('US-1','US-2')
 
-setwd("~/yeast-idr-analysis-main/raw_counts/Dcp2_sortSeq/Dcp2_sort_Rep2/")
+setwd("~/post-transcriptional-idrs/raw_counts/Dcp2_sortSeq/Dcp2_sort_Rep2/")
 dcp2_rep2 = format_counts(list.files(pattern ='.txt'))
 colnames(dcp2_rep2)[2:ncol(dcp2_rep2)] = sapply(strsplit(colnames(dcp2_rep2)[2:ncol(dcp2_rep2)],'_'), 
                                                 function(x){x[4]})
@@ -83,6 +83,6 @@ scores = all_counts[,c('Name','activity_score_r1','activity_score_r2')]
 scores$avg_activity = rowMeans(scores[c('activity_score_r1','activity_score_r2')])
 scores$activity_sd = apply(scores[c('activity_score_r1','activity_score_r2')],1,sd)
 
-setwd('~/yeast-idr-analysis-main/processed_scores/')
+setwd('~/post-transcriptional-idrs/processed_scores/')
 write.csv(all_counts, "dcp2_allCounts.csv",row.names = F)
 write.csv(scores, 'dcp2_scores.csv',row.names = F)

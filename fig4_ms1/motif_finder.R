@@ -1,11 +1,11 @@
 library(depmixS4)
 
 
-setwd("~/yeast-idr-analysis-main/processed_scores/")
+setwd("~/post-transcriptional-idrs/processed_scores/")
 scores = read.csv("dms_scores.csv")
 hmm_acts = read.csv("scram_vs_hmm.csv") #if this doesn't exist, run script in fig6 (scramble_assignment.R)
 
-setwd("~/yeast-idr-analysis-main/screening_lib_seqs/")
+setwd("~/post-transcriptional-idrs/screening_lib_seqs/")
 aa_seq = read.csv("mutational_library_translation.csv")
 
 #get motifs as ones that are sig diff in scramble and have negative scram vs hmm scores
@@ -127,7 +127,7 @@ submotifs$len = nchar(submotifs$seq)
 
 
 
-setwd("~/yeast-idr-analysis-main/fig4_ms1/")
+setwd("~/post-transcriptional-idrs/fig4_ms1/")
 
 write.csv(submotifs,'subMotifs_hmm.csv',row.names = F)
 write.csv(motif, 'motifs_full.csv',row.names = F) #also write the full motif data
@@ -140,8 +140,8 @@ compo_output = data.frame(pep=composition$name,
                           state = rep('active',nrow(composition)),
                           len = rep(50,nrow(composition)))
 
-if(!(file.exists('~/yeast-idr-analysis-main/fig6_ms1/'))){
-  write.csv(compo_output,'~/yeast-idr-analysis-main/composition.csv',row.names = F)
+if(!(file.exists('~/post-transcriptional-idrs/fig6_ms1/'))){
+  write.csv(compo_output,'~/post-transcriptional-idrs/composition.csv',row.names = F)
 }
 
 
