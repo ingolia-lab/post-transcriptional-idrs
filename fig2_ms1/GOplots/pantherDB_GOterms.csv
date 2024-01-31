@@ -1,0 +1,82 @@
+﻿Analysis Type:,PANTHER Overrepresentation Test (Released 20231017),,,,,,
+Annotation Version and Release Date:,GO Ontology database DOI:  10.5281/zenodo.7942786 Released 2023-01-05,,,,,,
+Analyzed List:,repressive_orfs.txt (Saccharomyces cerevisiae),,,,,,
+Reference List:,all_orfs.txt (Saccharomyces cerevisiae),,,,,,
+Test Type:,FISHER,,,,,,
+Correction:,FDR,,,,,,
+GO biological process complete,all_orfs.txt - REFLIST (2728),repressive_orfs.txt (394),repressive_orfs.txt (expected),repressive_orfs.txt (over/under),repressive_orfs.txt (fold Enrichment),repressive_orfs.txt (raw P-value),repressive_orfs.txt (FDR)
+"nuclear-transcribed mRNA catabolic process, deadenylation-dependent decay (GO:0000288)",21,13,3.03,+,4.29,1.28E-04,7.89E-03
+RNA destabilization (GO:0050779),34,19,4.91,+,3.87,1.07E-05,7.57E-04
+mRNA destabilization (GO:0061157),34,19,4.91,+,3.87,1.07E-05,7.43E-04
+regulation of mRNA stability (GO:0043488),43,24,6.21,+,3.86,7.31E-07,6.85E-05
+positive regulation of mRNA catabolic process (GO:0061014),36,20,5.2,+,3.85,6.67E-06,4.90E-04
+positive regulation of mRNA metabolic process (GO:1903313),38,21,5.49,+,3.83,4.16E-06,3.18E-04
+regulation of RNA stability (GO:0043487),44,24,6.35,+,3.78,1.00E-06,8.52E-05
+regulation of mRNA catabolic process (GO:0061013),48,25,6.93,+,3.61,1.13E-06,9.45E-05
+regulation of growth of unicellular organism as a thread of attached cells (GO:0070784),29,15,4.19,+,3.58,1.79E-04,1.03E-02
+negative regulation of amide metabolic process (GO:0034249),53,27,7.65,+,3.53,5.82E-07,5.74E-05
+negative regulation of translation (GO:0017148),53,27,7.65,+,3.53,5.82E-07,5.59E-05
+regulation of mRNA metabolic process (GO:1903311),57,26,8.23,+,3.16,4.70E-06,3.52E-04
+regulation of filamentous growth of a population of unicellular organisms (GO:1900428),33,15,4.77,+,3.15,5.25E-04,2.73E-02
+response to heat (GO:0009408),31,14,4.48,+,3.13,8.45E-04,4.34E-02
+regulation of filamentous growth (GO:0010570),35,15,5.05,+,2.97,8.51E-04,4.31E-02
+positive regulation of cellular catabolic process (GO:0031331),66,26,9.53,+,2.73,4.01E-05,2.59E-03
+negative regulation of protein metabolic process (GO:0051248),75,29,10.83,+,2.68,2.76E-05,1.81E-03
+post-transcriptional regulation of gene expression (GO:0010608),112,42,16.18,+,2.6,5.52E-07,5.59E-05
+regulation of amide metabolic process (GO:0034248),110,41,15.89,+,2.58,8.57E-07,7.65E-05
+regulation of translation (GO:0006417),108,39,15.6,+,2.5,2.65E-06,2.11E-04
+regulation of cellular catabolic process (GO:0031329),97,35,14.01,+,2.5,1.05E-05,7.57E-04
+positive regulation of catabolic process (GO:0009896),75,27,10.83,+,2.49,1.05E-04,6.58E-03
+positive regulation of RNA metabolic process (GO:0051254),303,109,43.76,+,2.49,1.26E-16,9.44E-14
+positive regulation of transcription by RNA polymerase II (GO:0045944),237,83,34.23,+,2.42,7.69E-12,9.30E-10
+nuclear-transcribed mRNA catabolic process (GO:0000956),73,25,10.54,+,2.37,4.91E-04,2.59E-02
+mRNA catabolic process (GO:0006402),76,26,10.98,+,2.37,3.51E-04,1.94E-02
+negative regulation of macromolecule biosynthetic process (GO:0010558),202,69,29.17,+,2.37,1.29E-09,1.47E-07
+positive regulation of nucleobase-containing compound metabolic process (GO:0045935),320,109,46.22,+,2.36,3.55E-15,1.48E-12
+negative regulation of cellular biosynthetic process (GO:0031327),212,71,30.62,+,2.32,1.50E-09,1.66E-07
+positive regulation of DNA-templated transcription (GO:0045893),269,90,38.85,+,2.32,4.75E-12,6.14E-10
+positive regulation of RNA biosynthetic process (GO:1902680),269,90,38.85,+,2.32,4.75E-12,5.93E-10
+negative regulation of biosynthetic process (GO:0009890),216,72,31.2,+,2.31,1.23E-09,1.44E-07
+positive regulation of macromolecule biosynthetic process (GO:0010557),294,97,42.46,+,2.28,1.42E-12,2.12E-10
+positive regulation of cellular biosynthetic process (GO:0031328),299,98,43.18,+,2.27,1.13E-12,2.12E-10
+positive regulation of biosynthetic process (GO:0009891),301,98,43.47,+,2.25,1.42E-12,2.21E-10
+positive regulation of macromolecule metabolic process (GO:0010604),367,115,53.01,+,2.17,8.47E-14,2.65E-11
+positive regulation of nitrogen compound metabolic process (GO:0051173),361,112,52.14,+,2.15,3.30E-13,7.72E-11
+regulation of transcription by RNA polymerase II (GO:0006357),353,109,50.98,+,2.14,1.09E-12,2.15E-10
+positive regulation of cellular metabolic process (GO:0031325),374,115,54.02,+,2.13,2.28E-13,6.11E-11
+regulation of RNA metabolic process (GO:0051252),465,142,67.16,+,2.11,7.97E-17,7.47E-14
+regulation of catabolic process (GO:0009894),120,36,17.33,+,2.08,1.79E-04,1.02E-02
+positive regulation of metabolic process (GO:0009893),394,118,56.9,+,2.07,4.16E-13,8.66E-11
+negative regulation of cellular metabolic process (GO:0031324),264,79,38.13,+,2.07,1.26E-08,1.35E-06
+regulation of cellular biosynthetic process (GO:0031326),539,160,77.85,+,2.06,3.12E-18,1.17E-14
+negative regulation of RNA metabolic process (GO:0051253),150,44,21.66,+,2.03,5.01E-05,3.18E-03
+regulation of macromolecule biosynthetic process (GO:0010556),536,157,77.41,+,2.03,1.72E-17,2.14E-14
+regulation of biosynthetic process (GO:0009889),554,162,80.01,+,2.02,4.01E-18,7.51E-15
+regulation of RNA biosynthetic process (GO:2001141),416,121,60.08,+,2.01,1.16E-12,2.07E-10
+regulation of DNA-templated transcription (GO:0006355),416,121,60.08,+,2.01,1.16E-12,1.97E-10
+negative regulation of DNA-templated transcription (GO:0045892),142,41,20.51,+,2,1.31E-04,7.93E-03
+negative regulation of RNA biosynthetic process (GO:1902679),142,41,20.51,+,2,1.31E-04,7.80E-03
+negative regulation of nitrogen compound metabolic process (GO:0051172),253,73,36.54,+,2,2.15E-07,2.24E-05
+negative regulation of transcription by RNA polymerase II (GO:0000122),116,33,16.75,+,1.97,8.76E-04,4.38E-02
+positive regulation of cellular process (GO:0048522),494,138,71.35,+,1.93,1.92E-13,5.55E-11
+regulation of gene expression (GO:0010468),612,167,88.39,+,1.89,3.61E-16,2.26E-13
+regulation of nucleobase-containing compound metabolic process (GO:0019219),528,144,76.26,+,1.89,2.53E-13,6.31E-11
+positive regulation of biological process (GO:0048518),526,141,75.97,+,1.86,1.63E-12,2.35E-10
+negative regulation of gene expression (GO:0010629),181,47,26.14,+,1.8,3.86E-04,2.10E-02
+regulation of cellular metabolic process (GO:0031323),681,173,98.36,+,1.76,3.45E-14,1.17E-11
+negative regulation of macromolecule metabolic process (GO:0010605),350,88,50.55,+,1.74,1.79E-06,1.46E-04
+negative regulation of metabolic process (GO:0009892),374,94,54.02,+,1.74,7.35E-07,6.72E-05
+regulation of nitrogen compound metabolic process (GO:0051171),660,165,95.32,+,1.73,1.17E-12,1.91E-10
+regulation of primary metabolic process (GO:0080090),687,171,99.22,+,1.72,3.72E-13,8.20E-11
+negative regulation of cellular process (GO:0048523),427,103,61.67,+,1.67,8.70E-07,7.58E-05
+regulation of cellular component organization (GO:0051128),282,67,40.73,+,1.65,2.13E-04,1.19E-02
+regulation of macromolecule metabolic process (GO:0060255),745,177,107.6,+,1.64,4.57E-12,6.12E-10
+regulation of metabolic process (GO:0019222),786,185,113.52,+,1.63,1.78E-12,2.47E-10
+regulation of cellular process (GO:0050794),1039,234,150.06,+,1.56,2.26E-15,1.06E-12
+negative regulation of biological process (GO:0048519),525,118,75.82,+,1.56,2.70E-06,2.11E-04
+regulation of biological process (GO:0050789),1122,247,162.05,+,1.52,1.13E-15,6.06E-13
+biological regulation (GO:0065007),1178,251,170.14,+,1.48,2.23E-14,8.35E-12
+ncRNA metabolic process (GO:0034660),290,19,41.88,-,0.45,1.36E-04,7.98E-03
+ncRNA processing (GO:0034470),236,15,34.09,-,0.44,4.81E-04,2.58E-02
+rRNA metabolic process (GO:0016072),220,10,31.77,-,0.31,1.85E-05,1.26E-03
+rRNA processing (GO:0006364),182,7,26.29,-,0.27,2.35E-05,1.57E-03
