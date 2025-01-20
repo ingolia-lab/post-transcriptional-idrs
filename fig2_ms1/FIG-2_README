@@ -1,0 +1,8 @@
+FIG-2: README:
+GOplots contains data and script for performing GO analysis with PantherDB (Fig. 2a)
+
+IAA_sorts contains FACS data from sorting depletion strains and scripts to compare YFP/RFP distributions (Fig. 2d)
+
+X_scoreProcessing.R scores activity in the appropriate depletion strain 
+
+epistasisAnalaysisV2.R contains scripts that determine fragments with different activity between WT and depletion conditions. Activity scores in depletion backgrounds are fit to a LOESS model to more directly compare activity scores to WT strain, and then a Z-test followed by FDR correction is used to assess statistical significance. This also contains scripts to generate UpSet plots and Edc1 profile (Fig. 2e-h, as well as associated Extended Data). 

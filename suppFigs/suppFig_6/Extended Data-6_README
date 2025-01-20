@@ -1,0 +1,12 @@
+Extended Data-6: README
+plotPchem.R contains scripts to correlate repressor activity with aromatic residues, negative charges, omegaaro values, and KD-hydrophobicity. hydrophobicity_calc.py and omega_calc.py contain scripts to generate various physical-chemical properties of repressors. (ED. Fig. 6a,b,d,f)
+
+dipep_coefs_heatmap contains scripts to generate ED. Fig. 6c. Coefficients were generated from logit_models in main text folder. 
+
+cross_class_predictions contains scripts to calculate and plot how the motif and compositional classifiers predict the other class (ED. Fig. 6d)
+
+indiv_LA_predictions contains script to generate and plot per-residue prediction from light attention models (ED. Fig. 6g-i). 
+
+mrn1_compo_flow contains data and scripts to compare predicted score and measured YFP/RFP ratio of mrn1 variants (ED. Fig. 6j). 
+
+randomShuffles_diaros contains 10,000 permuted variants of 5 composition-driven repressors and scripts that calculate diaromatic frequency within in silico shuffled fragments or experimentally measured repressors and their variants (ED. Fig. 6k,l). 

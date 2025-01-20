@@ -1,0 +1,9 @@
+dms_scoring.R contains scripts to score the mutational scanning sort-seq screen.  Scores are in the ‘processed scores’ folder in the main directory. 
+
+rank_order_mutational folder contains scripts to generate the rank-order scores from the mutational scanning flow (Fig. 3b)
+
+indiv_hmmPlotter.R generates mutational scanning profiles for repressors (Fig. 3c-d, Fig. 4a,g,h, Fig. 5a), and provides a generally useful script to visualize mutational scanning profile of a repressor of interest. 
+
+select_mut_flow contains scripts and flow cytometry data from individually validated repressors and mutations that inactivate them. 
+
+motif_enrichment contains files and scripts to extract motifs and calculate their amino acid composition relative to the flanking regions using composition profiler (https://doi.org/10.1186/1471-2105-8-21)

@@ -1,0 +1,4 @@
+Extended Data-3: README
+growth_curvePlots.R generates growth curves and calculates growth rates for degron yeast strains. 
+
+degronScoreCor.R plots the activity scores in wildtype and depletion strains.

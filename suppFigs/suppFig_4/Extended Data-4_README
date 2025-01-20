@@ -1,0 +1,4 @@
+Extended Data-4: README
+additional_DMS_scorePlots.R contains scripts for generating ED. Fig. 4a-d
+
+conservation analysis was performed within alignments_all. Within folder, script to generate and calculate conservation scores are in conservation_analysis.R. Sequences retrieved from yeast genome order browser (ED. Fig. 4e)

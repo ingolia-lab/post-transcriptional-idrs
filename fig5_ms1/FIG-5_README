@@ -1,0 +1,11 @@
+scramble_assignment.R calculates an average score of scrambled variants for each repressor, and compares these scores to WT activities and HMM state differences (Fig. 5b,c) 
+
+scambles_v_wt_flow contains raw data flow files and scripts for calculating YFP/RFP ratio of wildtype and a selected scramble (Fig. 5d)
+
+idr_logit_models contain python scripts for splitting fragments into training and test sets and then performing logistic regression based on amino acid composition with 5-fold cross validation. They output model coefficients and AUPRC curves
+
+auprc_curves aggregates the AUPRC curves determined from idr_logit_models (Fig. 5e)
+
+coefficient_comparison contains a script to compare the composition models amino acid coefficients between the composition model and the motif for logistic regression (only the single amino acid models are used, the dipeptide coefficients are calculated in in Extended Data 6). All coefficients were extracted from the models with the folder “idr_logit_models”
+
+disordered_enrichment contains scripts to compare the relative frequency of amino acids within the IDR library against the entire yeast proteome (Fig. 5g). 

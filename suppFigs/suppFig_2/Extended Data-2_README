@@ -1,0 +1,6 @@
+Extended Data-2: README
+cascade_plots contains the script for generating waterfall plot of activity and stability scores (ED. Fig. 2a,b)
+
+rbp_agreement contains datasets and the script used to compare RBP enrichment of repressive ORFs (ED. Fig. 2d). 
+
+Full GO analysis is generated in the associated script within FIG-2

@@ -12,3 +12,5 @@ HMM_analysis contains composition and motif dependent repressors calculated from
 Sequence_tables_dna contains various supplementary tables of strains, plasmids, oligos, and libraries. Screening_lib_seqs contains similar information used within some of the scripts.
 
 gateFlow.R contains script used for gate settings for flow cytometry analysis. 
+
+LightAttentionPredictor contains scripts to run model on sequence of interested. 

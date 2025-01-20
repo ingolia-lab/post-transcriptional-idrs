@@ -1,0 +1,8 @@
+FIG-4: README
+HMM profiles are generated with indiv_hmmPlotter.R in the FIG-3 folder. 
+
+tis11_mut_flow contains flow files and scripts for calculating the YFP/RFP ratio of wildtype Tis11 repressor and a mutant (Fig. 4b). 
+
+tis11_growthCurvePlotter.R plots the growth curves for tis11 phenotypes (Fig. 4c and Extended Data 5). 
+
+eap1_flow_seriesV2 folder contains flow files and scripts for calculating the YFP/RFP ratio of Eap1 tethering constructs. 

@@ -1,0 +1,10 @@
+Extended Data-1: README
+gating_scheme.R shows populations used in flow cytometry analysis (ED. Fig. 1a,b)
+
+count_distribution.R shows representative reads for two fragments in the Sort-seq screen (ED. Fig.1e)
+
+rfp_distribution_Script.R shows RFP fluorescence distributions for individually measured peptides (ED. Fig. 1i)
+
+nab3_plates contains images of dilution plates from the nab3 variant plasmid shuffling assay 
+
+Other plots are calculated from associated files in the FIG-1 directory (ebs1_ded_data, iJL039_sorts, or from the wt_scores).

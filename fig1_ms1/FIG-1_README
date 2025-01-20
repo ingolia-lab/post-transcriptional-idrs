@@ -1,0 +1,14 @@
+FIG-1: README:
+ebs1_ded_data contains information for validating test fragments (Fig. 1b)
+
+iJL039_sorts contains FACS distribution (Fig. 1d)
+
+wt_scoring_script.R generates activity scores of each peptide (output in processed score)
+
+fig1_wt_sortseq_scores.R generates activity and stability score density plots (Fig. 1e)
+
+frag_vs_sortseq_analysis contains flow and activity scores comparisons (Fig. 1f)
+
+wt_Scores_rankPlot contains scripts for ranking fragments by activity score (Fig. 1g)
+
+Within nab3_mpt5_plots is “indiv_ORF_Plotter.R”, a generally useful script for plotting the fragments vs activity of any ORF (Fig. 1h-i)
