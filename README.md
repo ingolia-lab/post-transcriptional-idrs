@@ -13,4 +13,4 @@ Sequence_tables_dna contains various supplementary tables of strains, plasmids, 
 
 gateFlow.R contains script used for gate settings for flow cytometry analysis. 
 
-LightAttentionPredictor contains scripts to run model on sequence of interested. 
+LightAttentionPredictor contains scripts to run model on sequence of interest. 
