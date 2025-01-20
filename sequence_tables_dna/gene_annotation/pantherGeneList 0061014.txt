@@ -1,0 +1,21 @@
+
+YEAST|SGD=S000001687|UniProtKB=P36041	Eap1	Protein EAP1;EAP1;;orthologs			Saccharomyces cerevisiae
+YEAST|SGD=S000000673|UniProtKB=P25644	Pat1	DNA topoisomerase 2-associated protein PAT1;PAT1;PTN000489269;orthologs	PROTEIN ASSOCIATED WITH TOPO II RELATED-1, ISOFORM A (PTHR21551:SF0)	RNA processing factor(PC00147)	Saccharomyces cerevisiae
+YEAST|SGD=S000003851|UniProtKB=P47135	Jsn1	Protein JSN1;JSN1;PTN000283681;orthologs	PROTEIN JSN1-RELATED (PTHR47093:SF1)		Saccharomyces cerevisiae
+YEAST|SGD=S000005886|UniProtKB=Q08831	Vts1	RNA-binding protein VTS1;VTS1;PTN000968836;orthologs	PROTEIN SMAUG (PTHR12515:SF5)		Saccharomyces cerevisiae
+YEAST|SGD=S000002982|UniProtKB=P25339	Puf4	Pumilio homology domain family member 4;PUF4;PTN000283696;orthologs	PUMILIO HOMOLOGY DOMAIN FAMILY MEMBER 4 (PTHR12537:SF13)	RNA metabolism protein(PC00031)	Saccharomyces cerevisiae
+YEAST|SGD=S000002579|UniProtKB=P05453	Sup35	Eukaryotic peptide chain release factor GTP-binding subunit;SUP35;PTN000562472;orthologs	G1 TO S PHASE TRANSITION 2 (PTHR23115:SF36)	translation factor(PC00223)	Saccharomyces cerevisiae
+YEAST|SGD=S000003141|UniProtKB=P22147	Xrn1	5'-3' exoribonuclease 1;XRN1;PTN000269403;orthologs	5'-3' EXORIBONUCLEASE 1 (PTHR12341:SF7)	exoribonuclease(PC00099)	Saccharomyces cerevisiae
+YEAST|SGD=S000005141|UniProtKB=P34761	Whi3	Protein WHI3;WHI3;PTN002574688;orthologs	PROTEIN COUCH POTATO (PTHR10501:SF41)	RNA splicing factor(PC00148)	Saccharomyces cerevisiae
+YEAST|SGD=S000006276|UniProtKB=Q12514	Not5	General negative regulator of transcription subunit 5;NOT5;PTN000595807;orthologs	CCR4-NOT TRANSCRIPTION COMPLEX SUBUNIT 3 (PTHR23326:SF1)	general transcription factor(PC00259)	Saccharomyces cerevisiae
+YEAST|SGD=S000002319|UniProtKB=P39517	Dhh1	ATP-dependent RNA helicase DHH1;DHH1;PTN002777701;orthologs	ATP-DEPENDENT RNA HELICASE DDX6-RELATED (PTHR47960:SF17)	RNA helicase(PC00032)	Saccharomyces cerevisiae
+YEAST|SGD=S000006105|UniProtKB=Q08925	Mrn1	RNA-binding protein MRN1;MRN1;PTN000363323;orthologs	RNA-BINDING PROTEIN MRN1 (PTHR14089:SF8)	RNA splicing factor(PC00148)	Saccharomyces cerevisiae
+YEAST|SGD=S000006246|UniProtKB=Q12221	Puf2	mRNA-binding protein PUF2;PUF2;PTN000283680;orthologs	PROTEIN JSN1-RELATED (PTHR47093:SF1)		Saccharomyces cerevisiae
+YEAST|SGD=S000005062|UniProtKB=P53550	Dcp2	m7GpppN-mRNA hydrolase;DCP2;PTN000561852;orthologs	M7GPPPN-MRNA HYDROLASE (PTHR23114:SF17)		Saccharomyces cerevisiae
+YEAST|SGD=S000003936|UniProtKB=Q07807	Puf3	mRNA-binding protein PUF3;PUF3;PTN000283623;orthologs	MATERNAL PROTEIN PUMILIO (PTHR12537:SF12)	RNA metabolism protein(PC00031)	Saccharomyces cerevisiae
+YEAST|SGD=S000002782|UniProtKB=Q06390	Pho92	Methylated RNA-binding protein 1;PHO92;PTN000270481;orthologs	YTH DOMAIN-CONTAINING FAMILY PROTEIN (PTHR12357:SF89)	RNA metabolism protein(PC00031)	Saccharomyces cerevisiae
+YEAST|SGD=S000000416|UniProtKB=P32831	Ngr1	Negative growth regulatory protein NGR1;NGR1;PTN002691113;orthologs	HETEROGENEOUS NUCLEAR RIBONUCLEOPROTEIN A0 (PTHR48024:SF56)		Saccharomyces cerevisiae
+YEAST|SGD=S000003146|UniProtKB=P39016	Mpt5	Suppressor protein MPT5;MPT5;PTN000283693;orthologs	SUPPRESSOR PROTEIN MPT5 (PTHR12537:SF80)	RNA metabolism protein(PC00031)	Saccharomyces cerevisiae
+YEAST|SGD=S000003190|UniProtKB=P53080	Edc1	Enhancer of mRNA-decapping protein 1;EDC1;;orthologs			Saccharomyces cerevisiae
+YEAST|SGD=S000002383|UniProtKB=Q07655	Whi4	Protein WHI4;WHI4;PTN002574689;orthologs	PROTEIN COUCH POTATO (PTHR10501:SF41)	RNA splicing factor(PC00148)	Saccharomyces cerevisiae
+YEAST|SGD=S000000837|UniProtKB=P40023	Edc2	Enhancer of mRNA-decapping protein 2;EDC2;;orthologs			Saccharomyces cerevisiae

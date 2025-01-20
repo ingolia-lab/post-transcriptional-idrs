@@ -1,0 +1,13 @@
+
+YEAST|SGD=S000001687|UniProtKB=P36041	Eap1	Protein EAP1;EAP1;;orthologs			Saccharomyces cerevisiae
+YEAST|SGD=S000000673|UniProtKB=P25644	Pat1	DNA topoisomerase 2-associated protein PAT1;PAT1;PTN000489269;orthologs	PROTEIN ASSOCIATED WITH TOPO II RELATED-1, ISOFORM A (PTHR21551:SF0)	RNA processing factor(PC00147)	Saccharomyces cerevisiae
+YEAST|SGD=S000004126|UniProtKB=P47977	Tis11	mRNA decay factor CTH2;TIS11;PTN000284433;orthologs	PROTEIN TIS11 (PTHR12547:SF18)	RNA metabolism protein(PC00031)	Saccharomyces cerevisiae
+YEAST|SGD=S000002982|UniProtKB=P25339	Puf4	Pumilio homology domain family member 4;PUF4;PTN000283696;orthologs	PUMILIO HOMOLOGY DOMAIN FAMILY MEMBER 4 (PTHR12537:SF13)	RNA metabolism protein(PC00031)	Saccharomyces cerevisiae
+YEAST|SGD=S000002614|UniProtKB=Q03466	Ebs1	Nonsense-mediated mRNA decay factor EBS1;EBS1;PTN001812700;orthologs	NONSENSE-MEDIATED MRNA DECAY FACTOR EBS1-RELATED (PTHR15696:SF37)	RNA metabolism protein(PC00031)	Saccharomyces cerevisiae
+YEAST|SGD=S000002319|UniProtKB=P39517	Dhh1	ATP-dependent RNA helicase DHH1;DHH1;PTN002777701;orthologs	ATP-DEPENDENT RNA HELICASE DDX6-RELATED (PTHR47960:SF17)	RNA helicase(PC00032)	Saccharomyces cerevisiae
+YEAST|SGD=S000005035|UniProtKB=P53935	Nst1	Stress response protein NST1;NST1;;orthologs			Saccharomyces cerevisiae
+YEAST|SGD=S000002701|UniProtKB=P24276	Ssd1	Protein SSD1;SSD1;PTN000599324;orthologs	DIS3-LIKE EXONUCLEASE 2 (PTHR23355:SF9)	exoribonuclease(PC00099)	Saccharomyces cerevisiae
+YEAST|SGD=S000002840|UniProtKB=Q01560	Npl3	Serine_arginine (SR)-type shuttling mRNA binding protein NPL3;NPL3;PTN002744294;orthologs	SERINE_ARGININE (SR)-TYPE SHUTTLING MRNA BINDING PROTEIN NPL3 (PTHR23003:SF62)	RNA splicing factor(PC00148)	Saccharomyces cerevisiae
+YEAST|SGD=S000005802|UniProtKB=P12962	Caf20	Cap-associated protein CAF20;CAF20;;orthologs			Saccharomyces cerevisiae
+YEAST|SGD=S000006333|UniProtKB=P45978	Scd6	Protein SCD6;SCD6;PTN000340132;orthologs	TRAILER HITCH, ISOFORM H (PTHR13586:SF0)	RNA metabolism protein(PC00031)	Saccharomyces cerevisiae
+YEAST|SGD=S000003146|UniProtKB=P39016	Mpt5	Suppressor protein MPT5;MPT5;PTN000283693;orthologs	SUPPRESSOR PROTEIN MPT5 (PTHR12537:SF80)	RNA metabolism protein(PC00031)	Saccharomyces cerevisiae
